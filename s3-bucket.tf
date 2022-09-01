@@ -1,9 +1,4 @@
-module "s3_bucket" {
-  source = "terraform-aws-modules/s3-bucket/aws"
-
-  bucket = "xujabucket"
-  acl    = "private"
-
-  versioning = {
-    enabled = true
-  }}
+module "s3-bucket" {
+  source  = "app.terraform.io/xuja/s3-bucket/aws"
+  version = "3.4.0"
+}
